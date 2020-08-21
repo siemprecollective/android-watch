@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--https://github.com/mikepenz/Android-Iconics/issues/143 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabCustomSize="45dp"
+            app:fabSize="auto"
+            app:maxImageSize="35dp"
+            android:scaleType="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+</RelativeLayout>

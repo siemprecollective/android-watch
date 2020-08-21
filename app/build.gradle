@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.siempre.siemprewatch"
+        minSdkVersion 25
+        targetSdkVersion 28
+        versionCode 4
+        versionName "4.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.android.support:wearable:2.3.0'
+    implementation 'com.google.android.gms:play-services-wearable:16.0.1'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0-beta01'
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android:flexbox:1.0.0'
+    implementation 'androidx.wear:wear:1.0.0'
+    implementation 'com.google.firebase:firebase-core:16.0.9'
+    implementation 'com.google.firebase:firebase-firestore:18.2.0'
+    implementation 'com.google.firebase:firebase-auth:18.0.0'
+    implementation 'com.google.firebase:firebase-storage:18.0.0'
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.twilio:video-android:2.2.1'
+    implementation 'com.koushikdutta.ion:ion:2.1.8'
+    implementation 'com.bugfender.sdk:android:1.+'
+    compileOnly 'com.google.android.wearable:wearable:2.3.0'
+}
+
+apply plugin: 'com.google.gms.google-services'
